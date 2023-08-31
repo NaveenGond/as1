@@ -155,80 +155,6 @@ body{
     color: var(--main-color);
     border-color: var(--main-color);
 }
-.home .profession-container{
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-    right: 0;
-    width: 768px;
-    height: 768px;
-    overflow: hidden;
-}
-.profession-container .profession-box{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards, professionRotate 13s ease-out infinite;
-    animation-delay: 2.5s,3.5s;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.profession-box .profession{
-    position: absolute;
-    transform-origin: 384px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    background:var(--primary-color);
-    padding: 13px 0;
-    align-items: center;
-    transform: rotate(calc(360deg / 4 * var(--i)));
-    color: var(--main-color);
-}
-.profession-box .profession:nth-child(1) i{
-    margin-right: 15px;
-}
-.profession-box .profession:nth-child(2){
-    padding-bottom: 20px;
-}
-.profession-box .profession:nth-child(4){
-    padding-bottom: 20px;
-}  
-.profession i{
-    font-size: 38px;
-
-}
-.profession h3{
-    font-size: 32px;
-    line-height: 1;
-    font-weight: 600;
-}
-.profession-box .circle{
-    width: 72%;
-    height: 72%;
-    border: 3px solid var(--main-color);
-    border-radius: 50%;
-
-}
-.profession-container .overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 384 solid var(--main-color);
-    border-right: 384 solid var(--main-color);
-    border-bottom:384 solid var(--main-color);
-    border-left: 384 solid transparent;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1.5s;
-}
 .home-img img{
    position: absolute;
    right: 200px;
@@ -286,4 +212,65 @@ body{
     100%{
         transform:rotate(-360deg);
     }
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+
+.secondSection .box{
+    background-color: white;
+    width: 76vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+
+
+
+.vertical-text{
+    position: relative;
+    top: 70px;
+    width: 150px;
+    
+}
+
+.vertical-desc{
+    position: relative;
+    top: 74px;
+    color: rgb(250, 245, 245);
+    width: 150px;
+    font-size: 15px
+}
+footer{
+    background-color: #04040c;
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+.footer ul{
+list-style: none;
+}
+
+.footer > div{
+    width: 223px;
+}
+
+footer .footer-rights{
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
 }
